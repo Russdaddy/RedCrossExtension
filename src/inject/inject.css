@@ -1,0 +1,16 @@
+#red-cross-button{
+	width:100%;
+	height:34px;
+	color:white;
+	background-color:red;
+	text-align:center;
+}
+
+#red-cross-button p{
+	display:block;
+	float:left;
+}
+
+#red-cross-button img{
+	width:30px;
+} 
