@@ -19,7 +19,7 @@
     ],
     "persistent": true
   },
-  "page_action": {
+  "browser_action": {
     "default_icon": "icons/19.png",
     "default_title":"Red Cross Round Up",
     "default_popup": "src/page_action/page_action.html"
@@ -29,12 +29,14 @@
     "contextMenus",
     "cookies",
     "tabs",
+    "storage",
     "<all_urls>"
   ],
   "content_scripts":[
     {
       "matches":["https://www.amazon.com/*"],
       "js":[
+        "src/inject/braintree.js",
         "src/inject/jquery.js",
         "src/inject/inject.js"
       ],
